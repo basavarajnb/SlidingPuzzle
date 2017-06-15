@@ -1,0 +1,11 @@
+<div #boxContainer class="boxes-container" [style.width.px]="puzzleService.puzzleBoxSize + 6" [style.height.px]="puzzleService.puzzleBoxSize + 6">
+
+    <div class="box-item" *ngFor="let boxItem of puzzleService.boxes; let i = index;" [style.top.px]="boxItem.top + 4" [style.left.px]="boxItem.left" [style.width.px]="puzzleService.boxSize"
+    [style.height.px]="puzzleService.boxSize - 4"
+    (click)="moveBox(boxItem)">
+      <div *ngIf="boxItem.index != 9" class="button-container" [class.error]="isBoxNotMovable">
+        <span class="box-number"> {{boxItem.index}}</span>
+      </div>
+    </div>
+    
+</div>

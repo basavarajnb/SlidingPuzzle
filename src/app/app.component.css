@@ -1,0 +1,25 @@
+h2 {
+    margin: 0px;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 90%;
+    height: 90%;
+    max-width: 1368px;
+}
+
+header {
+    padding: 10px;
+    min-height: 30px;
+    background-color: #eee;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
